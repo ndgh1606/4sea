@@ -6,6 +6,7 @@ const Hero = () =>{
     return (
         <section className="hero-wrapper">
                 <div className="paddings innerWidth flexCenter hero-container">
+                    {/*left site*/}
                 <div className="flexColStart hero-left">
                         <div className="hero-title">
                             <div className="orange-circle"/>
@@ -27,36 +28,34 @@ const Hero = () =>{
                     </div>
 
                     <div className="flexCenter stats">
-                        <div className="flexColStart stat">
+                        <div className="flexColCenter stat">
                             <span>
                                 <CountUp start={8800} end={9000} duration={4}/>
                                 <span>+</span>
-                                <span>
-                                Premium Product
-                                </span>
+                                <div className="flexColStart">
+                                <span className="secondaryText">Premium Product</span>
+                                </div>
                             </span>
                         </div>
                         <div className="flexColStart stat">
                             <span>
                                 <CountUp start={1950} end={2000} duration={4}/>
                                 <span>+</span>
-                                <span>
-                                Premium Product
-                                </span>
+                                <div className="flexColStart">
+                                <span className="secondaryText">Happy Customer</span>
+                                </div>
                             </span>
                         </div>
                         <div className="flexColStart stat">
                             <span>
                                 <CountUp end={28}/>
                                 <span>+</span>
-                                <span>
-                                Premium Product
-                                </span>
+                                <div className="flexColStart">
+                                <span className="secondaryText">Winning Award</span>
+                                </div>
                             </span>
                         </div>
-                        
-                    </div>
-                    
+                    </div>                  
                     </div>
                 {/* right site */}
                     <div className="flexCenter hero-right">
